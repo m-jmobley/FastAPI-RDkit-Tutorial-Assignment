@@ -1,8 +1,6 @@
  # -*- coding: utf-8 -*-
 """
 Created on Mon Jan  1 21:55:04 2024
-
-@author: M312630
 """
 
 #%% Dependencies
