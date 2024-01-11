@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+ # -*- coding: utf-8 -*-
 """
 Created on Mon Jan  1 21:55:04 2024
 
-
+@author: M312630
 """
 
 #%% Dependencies
@@ -35,6 +35,6 @@ if is_smart_valid:
 
 if is_smile_valid == True and is_smart_valid == True:
     api_instance.setRequest(controller_instance)
-    results = requests.get(f"http://127.0.0.1:8000/run_reaction/{api_instance.verified_request['reactants']}/{api_instance.verified_request['reaction_smarts']}")
-    print(results.content)
+    results = requests.get(f"http://127.0.0.1:8000/reaction_return/?SMILE={api_instance.verified_request['reactants']}&SMART={api_instance.verified_request['reaction_smarts']}")
+    print(results.json())
     

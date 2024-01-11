@@ -2,6 +2,7 @@
 """
 Created on Tue Dec 26 14:04:25 2023
 
+@author: M312630
 """
 #%% Dependencies
 from rdkit import Chem
